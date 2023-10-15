@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build
+        env:
+          GH_TOKEN: ${{ secrets.TIPPY_JP_GITHUB_TOKEN }}
         run: ./build.sh
 
       - name: Setup
