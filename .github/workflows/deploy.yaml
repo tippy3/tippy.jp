@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: tippy.jp
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -36,4 +36,5 @@ jobs:
           path: _site
 
       - name: Deploy
+        id: deploy
         uses: actions/deploy-pages@v2
