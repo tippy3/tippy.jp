@@ -1,3 +1,3 @@
 # tippy.jp
 
-https://tippy.jp
+自分のドメインです。短縮URLなどに使っています。
